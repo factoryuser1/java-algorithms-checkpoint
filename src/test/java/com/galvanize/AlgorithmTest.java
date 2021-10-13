@@ -37,7 +37,6 @@ public class AlgorithmTest {
         expected.put("b", 2L);
         expected.put("c", 1L);
         expected.put("d", 1L);
-        System.out.print(algorithm.letterCount(arg));
         assertTrue(algorithm.letterCount(arg).equals(expected));
     }
 
@@ -50,7 +49,6 @@ public class AlgorithmTest {
         expected.put("b", 2L);
         expected.put("c", 1L);
         expected.put("d", 1L);
-        System.out.print(algorithm.letterCount(arg));
         assertFalse(algorithm.letterCount(arg).equals(expected));
     }
 
@@ -75,7 +73,7 @@ public class AlgorithmTest {
         Algorithm algorithm = new Algorithm();
         String expected = "adbecd";
         String actual = algorithm.interleave(Arrays.asList("a", "b", "c"), Arrays.asList("d", "e", "f"));
-        assertEquals(expected, actual);
+        assertNotEquals(expected, actual);
     }
 
     @Test

@@ -7,6 +7,7 @@ public class Algorithm {
 
     public boolean allEqual(String str) {
 
+        if (str.isEmpty()) return false;
         return Arrays.stream(str.toLowerCase().split("")).distinct().count()==1;
 
 //        String strArg = arg;
